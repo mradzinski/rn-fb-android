@@ -3,25 +3,24 @@ package io.invertase.firebase.config;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.google.android.gms.tasks.Task;
-import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.ReadableMap;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.bridge.ReadableArray;
-import com.facebook.react.bridge.WritableArray;
-import com.google.android.gms.tasks.OnCompleteListener;
+import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import com.google.firebase.FirebaseApp;
+import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.WritableArray;
+import com.facebook.react.bridge.WritableMap;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
-import com.google.firebase.remoteconfig.FirebaseRemoteConfigValue;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigValue;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.List;
 
 import io.invertase.firebase.Utils;
 
@@ -35,7 +34,7 @@ class RNFirebaseRemoteConfig extends ReactContextBaseJavaModule {
   private static final String NUMBER_VALUE = "numberValue";
   private static final String SOURCE = "source";
 
-  RNFirebaseRemoteConfig(ReactApplicationContext reactContext) {
+  public RNFirebaseRemoteConfig(ReactApplicationContext reactContext) {
     super(reactContext);
     Log.d(TAG, "New instance");
   }

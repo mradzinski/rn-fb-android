@@ -40,7 +40,7 @@ public class RNFirebaseDatabase extends ReactContextBaseJavaModule {
   private static HashMap<String, Boolean> loggingLevelSet = new HashMap<>();
   private SparseArray<RNFirebaseTransactionHandler> transactionHandlers = new SparseArray<>();
 
-  RNFirebaseDatabase(ReactApplicationContext reactContext) {
+  public RNFirebaseDatabase(ReactApplicationContext reactContext) {
     super(reactContext);
   }
 

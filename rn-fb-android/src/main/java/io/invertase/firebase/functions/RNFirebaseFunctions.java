@@ -29,7 +29,7 @@ public class RNFirebaseFunctions extends ReactContextBaseJavaModule {
   private static final String DETAILS_KEY = "details";
   private static final String TAG = "RNFirebaseFunctions";
 
-  RNFirebaseFunctions(ReactApplicationContext reactContext) {
+  public RNFirebaseFunctions(ReactApplicationContext reactContext) {
     super(reactContext);
     Log.d(TAG, "New instance");
   }
