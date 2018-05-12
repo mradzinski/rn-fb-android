@@ -54,7 +54,7 @@ import java.util.regex.Pattern;
 import io.invertase.firebase.Utils;
 
 @SuppressWarnings("ThrowableResultOfMethodCallIgnored")
-class RNFirebaseAuth extends ReactContextBaseJavaModule {
+public class RNFirebaseAuth extends ReactContextBaseJavaModule {
   private static final String TAG = "RNFirebaseAuth";
   private String mVerificationId;
   private PhoneAuthCredential mCredential;

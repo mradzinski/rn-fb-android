@@ -24,7 +24,7 @@ import java.util.Set;
 
 import io.invertase.firebase.Utils;
 
-class RNFirebaseRemoteConfig extends ReactContextBaseJavaModule {
+public class RNFirebaseRemoteConfig extends ReactContextBaseJavaModule {
 
   private static final String TAG = "RNFirebaseRemoteConfig";
 
